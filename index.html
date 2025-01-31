@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-003</title>
+    <!-- Tailwind Cdn -->
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <!-- DaisyUI Cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font-awesome cdn -->
+    <script src="https://kit.fontawesome.com/7035e8b9e7.js" crossorigin="anonymous"></script>
+    <!-- Goggle font cdn -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <style>
+        .font-sora {
+            font-family: "sora", serif;
+        }
+
+        .bg-color {
+            background: linear-gradient(180deg, #FFF 0%, #EFEBE3 100%);
+        }
+    </style>
+</head>
+
+<body class="font-sora">
+    <!-- Header start -->
+    <header class="">
+        <nav class=" mx-auto px-4  flex items-start justify-between h-20 w-full lg:w-[85%]">
+            <a class="text-xl py-3">
+                <img src="c2-assets/logo-header.png" alt="" class="">
+            </a>
+            <button class="sm:block md:hidden text-green-700  mt-4 md:mt-0 ">
+                <i class="text-2xl fa-solid fa-bars"></i>
+            </button>
+            <ul class="hidden md:flex space-x-6 items-center h-full text-lg">
+                <li><a class="">Product</a></li>
+                <li><a class="">Services</a></li>
+                <li><a class="">Contact Us</a></li>
+            </ul>
+            <div class="hidden md:flex items-center space-x-4 h-full">
+                <i class=" text-2xl fa-solid fa-magnifying-glass"></i>
+                <i class=" text-2xl fa-solid fa-cart-plus"></i>
+                <a class="btn border border-green-500 py-2 px-5 text-lg bg-white">Login</a>
+                <a class="btn text-white rounded-xl bg-green-600 text-lg py-2 px-5">Register</a>
+            </div>
+        </nav>
+    </header>
+    <!-- Header End -->
+
+    <!-- Banner section start -->
+    <section class="bg-color">
+        <div class="text-center ">
+            <h2 class="sm:mx-4 font-semibold text-6xl text-[#111] mt-20">Freshness <span class="text-[#179800]"> You Can
+                    <br>
+                    Count</span> On, Prices You’ll Love!</h2>
+            <p class="text-xl font-normal text-[#111] mt-8">Shop your daily essentials at unbeatable prices. From fresh
+                produce to<br>pantry staples, we’ve got you covered every day!</p>
+            <img class="mx-auto" src="c2-assets/hero-vegetables.png" alt="">
+        </div>
+
+    </section>
+    <!-- Banner section end -->
+
+    <main>
+        <!-- card section start -->
+        <section class="md:container mx-auto my-32 lg:w-[85%] ">
+            <h1 class="text-[#179800] text-4xl font-semibold ml-5 md:0">Services</h1>
+            <div class="flex flex-col md:flex-row sm:justify-center md:justify-between mt-8 gap-8 px-5 md:px-0 ">
+                <!-- card 1 -->
+                <div class="card bg-[#EFEBE3] w-full sm:w-72 md:w-80 lg:w-96">
+                    <figure class="px-5 pt-15">
+                        <img src="c2-assets/service.png" alt="" class="bg-white rounded-full w-24 mx-auto" />
+                    </figure>
+
+
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title text-xl text-black">24/7 Services</h2>
+                        <p class="text-stone-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                            eiusmod tempor incididunt</p>
+                    </div>
+                </div>
+                <!-- card 2 -->
+                <div class="card bg-[#EFEBE3] w-full sm:w-72 md:w-80 lg:w-96">
+                    <figure class="px-5 pt-15">
+                        <img src="c2-assets/delivery.png" alt="" class="bg-white rounded-full w-24 mx-auto" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title text-xl text-black">Fast Delivery</h2>
+                        <p class="text-stone-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                            eiusmod tempor incididunt</p>
+                    </div>
+                </div>
+                <!-- card 3 -->
+                <div class="card bg-[#EFEBE3] w-full sm:w-72 md:w-80 lg:w-96">
+                    <figure class="px-5 pt-15">
+                        <img src="c2-assets/healthy.png" alt="" class="bg-white rounded-full w-24 mx-auto" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title text-xl text-black">Healthy Choices</h2>
+                        <p class="text-stone-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                            eiusmod tempor incididunt</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- card section end -->
+
+        <!-- card Items start -->
+        <section class="bg-[#EFEBE3]">
+            <h2 class="font-semibold text-4xl text-green-600 lg:w-[85%] mx-auto">Popular Products</h2>
+            <div class="hero  lg:w-[85%] mx-auto">
+                <div class="hero-content flex-col lg:flex-row">
+                    <img src="c2-assets/vegetable-offer.png" class=" rounded-lg shadow-2xl bg-[#F9DF8A] " />
+                    <div>
+                        <h1 class="text-5xl font-bold">Box Office News!</h1>
+                        <p class="py-6">
+                            Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
+                            quasi. In deleniti eaque aut repudiandae et a id nisi.
+                        </p>
+                        <button class="btn btn-primary">Get Started</button>
+                    </div>
+                </div>
+            </div>
+            <div class="mx-auto lg:w-[85%] ">
+                <div>
+
+                </div>
+
+            </div>
+
+            </div>
+        </section>
+
+
+
+    </main>
+
+</body>
+
+</html>
